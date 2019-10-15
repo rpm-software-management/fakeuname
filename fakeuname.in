@@ -1,0 +1,22 @@
+#!/bin/sh
+
+for i in "$@"; do
+    case $i in
+        -h|--help)
+            echo "usage: $0 <release> <program with arguments>"
+            echo
+            echo "Runs the 'program' with the given 'arguments'. When the program calls"
+            echo "the uname syscall, it will see the kernel release 'release'."
+            exit 0
+            ;;
+        *)
+            break
+            ;;
+    esac
+done
+
+export LD_PRELOAD="@CMAKE_INSTALL_FULL_LIBDIR@/libfakeuname.so"
+export FAKE_KERNEL_RELEASE="$1"
+shift
+
+$@
