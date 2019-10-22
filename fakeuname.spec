@@ -6,7 +6,7 @@ License: LGPLv2+
 Url: https://github.com/rpm-software-management/fakeuname
 Source0: %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires: gcc
+BuildRequires: cmake, gcc
 
 %global debug_package %{nil}
 
