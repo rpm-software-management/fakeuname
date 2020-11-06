@@ -1,3 +1,6 @@
+# Force out of source build
+%define __cmake_in_source_build 1
+
 Summary: A small library that overrides the uname() system call to return a configured fake kernel release.
 Name: fakeuname
 Version: 1.0.0
