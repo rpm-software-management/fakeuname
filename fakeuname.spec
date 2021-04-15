@@ -1,5 +1,4 @@
-# Force in-source build, we need to build on EPEL 7
-%define __cmake_in_source_build 1
+%undefine __cmake_in_source_build
 
 Summary: A small library that overrides the uname() system call to return a configured fake kernel release.
 Name: fakeuname
@@ -17,11 +16,11 @@ BuildRequires: cmake, gcc
 %autosetup
 
 %build
-%cmake .
-%make_build
+%cmake
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 %files
 %{_libdir}/libfakeuname.so
