@@ -12,6 +12,6 @@ endif()
 include(GNUInstallDirs)
 
 configure_file("fakeuname.in" "fakeuname" @ONLY)
-install(PROGRAMS "fakeuname" DESTINATION ${CMAKE_INSTALL_FULL_BINDIR})
+install(PROGRAMS "${CMAKE_BINARY_DIR}/fakeuname" DESTINATION ${CMAKE_INSTALL_FULL_BINDIR})
 
 add_subdirectory("src")
