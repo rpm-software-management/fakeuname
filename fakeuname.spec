@@ -2,7 +2,7 @@
 
 Summary: A small library that overrides the uname() system call to return a configured fake kernel release.
 Name: fakeuname
-Version: 1.0.0
+Version: 1.0.1
 Release: 1%{?dist}
 License: LGPLv2+
 Url: https://github.com/rpm-software-management/fakeuname
