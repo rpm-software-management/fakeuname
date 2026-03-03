@@ -2,7 +2,7 @@
 
 Summary: Library that overrides the uname() system call to a fake kernel release
 Name: fakeuname
-Version: 1.0.1
+Version: 1.0.2
 Release: 1%{?dist}
 License: LGPL-2.1-or-later
 Url: https://github.com/rpm-software-management/fakeuname
@@ -35,6 +35,9 @@ Provides a libfakeuname.so library and a setup script that preloads the library
 the uname system call) to a custom value.
 
 %changelog
+* Tue Mar 03 2026 Petr Pisar <ppisar@redhat.com> - 1.0.2-1
+- 1.0.2 bump
+
 * Fri Apr 16 2021 Lukas Hrazky <lhrazky@redhat.com> - 1.0.1-1
 - 1.0.1 bump
 

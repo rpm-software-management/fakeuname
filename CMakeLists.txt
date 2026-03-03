@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5.0)
 
-set(VERSION 1.0.0)
+set(VERSION 1.0.2)
 project(fakeuname LANGUAGES C VERSION ${VERSION})
 
 include(GNUInstallDirs)
