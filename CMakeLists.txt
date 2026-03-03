@@ -1,13 +1,7 @@
-cmake_minimum_required(VERSION 2.8.5)
+cmake_minimum_required(VERSION 3.5.0)
 
 set(VERSION 1.0.0)
-if(${CMAKE_VERSION} VERSION_LESS "3.0.0")
-    project(fakeuname C)
-    set(PROJECT_VERSION ${VERSION})
-else()
-    cmake_policy(VERSION 3.0.0)
-    project(fakeuname LANGUAGES C VERSION ${VERSION})
-endif()
+project(fakeuname LANGUAGES C VERSION ${VERSION})
 
 include(GNUInstallDirs)
 
